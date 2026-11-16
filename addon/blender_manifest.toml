@@ -1,0 +1,40 @@
+schema_version = "1.0.0"
+
+id = "arckep_3d"
+version = "0.1.0"
+name = "ArcKep 3D"
+tagline = "AI 3D generation, PBR retexture, retopo & rigging via ArcKep API"
+maintainer = "ArcKep <support@arckep.ru>"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+website = "https://arckep.ru/3d-models"
+
+copyright = [
+  "2026 ArcKep",
+]
+
+tags = [
+  "3D View",
+  "Modeling",
+  "Mesh",
+  "Rigging",
+  "Import-Export",
+  "UV",
+]
+
+[permissions]
+network = "Connect to ArcKep API and local MCP bridge on 127.0.0.1"
+files = "Import and export temporary 3D meshes, renders and STL files"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "*.pyc",
+  ".*",
+]
